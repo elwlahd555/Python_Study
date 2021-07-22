@@ -1,6 +1,6 @@
 import datetime
-import time
 import random
+import time
 
 before = datetime.datetime.now()
 
