@@ -231,7 +231,7 @@ def sending_mail():
     outlook = win32.Dispatch('outlook.application')
     mail = outlook.CreateItem(0)
 
-    mail.To = "Hobin.Im@amkor.co.kr"
+    mail.To = "rajeong.moon@amkor.co.kr;SuA.Lee@amkor.co.kr"
 
     file_location = f"C:\Myamkor\PycharmProjects\study\\"
     global which_menu
@@ -281,7 +281,7 @@ def sending_mail():
     )
 
     print(df_k4_menu_table)
-    mail.HTMLBody = "<html><body> " + hello_paragraph + " <img src='cid:" + "image.jpg" + "'> <br> </body></html>" + \
+    mail.HTMLBody = "<html><body> " + hello_paragraph + "<br> </body></html>" + \
                     df_k4_menu_table.to_html()
     # html table 만들기
     # <table><tr><th>     </th>   </tr>  <tr> <td>      </td>       </tr>        </table>

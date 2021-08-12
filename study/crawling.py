@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-webpage = requests.get("https://shopping.naver.com/")
+webpage = requests.get("https://www.naver.com/")
 soup = BeautifulSoup(webpage.content, "html.parser")
-text = soup.text
-print(text)
+
+print(soup.find_all("div"))
